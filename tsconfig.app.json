@@ -23,7 +23,9 @@
     "paths": {
       "@/services/*": ["src/services/*"],
       "@/stores/*": ["src/stores/*"],
-      "@/components/*": ["src/components/*"]
+      "@/components/*": ["src/components/*"],
+      "@/commons/*": ["src/commons/*"],
+      "@/pages/*": ["src/pages/*"]
     }
   },
   "include": ["src", "**/*.ts", "**/*.tsx"]
