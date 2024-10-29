@@ -1,1 +1,1 @@
-export const PATH = { HOME: '/', LOGIN: '/login', SIGN_UP: '/sign-up' }
+export const PATH = { HOME: '/', LOGIN: '/auth', SIGN_UP: '/sign-up' }

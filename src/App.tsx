@@ -1,6 +1,7 @@
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { PATH } from '@/commons/consts/routes'
 import AuthGate from '@/pages/AuthGate'
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import AuthPage from '@/pages/AuthPage'
 
 function App() {
   const router = createBrowserRouter([
@@ -13,7 +14,7 @@ function App() {
       ),
       children: [
         { index: true, element: <></> },
-        { path: PATH.LOGIN, element: <></> },
+        { path: PATH.LOGIN, element: <AuthPage /> },
         { path: PATH.SIGN_UP, element: <></> },
       ],
     },

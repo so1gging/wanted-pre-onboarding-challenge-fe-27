@@ -5,12 +5,12 @@ const AuthGate = ({ children }: PropsWithChildren) => {
   const pathname = location.pathname
   const token = tokenStorage.get()
 
-  if (!token && !pathname.includes('/login')) {
-    window.location.href = '/login'
+  if (!token && !pathname.includes('/auth')) {
+    window.location.href = '/auth'
     return null
   }
 
-  if (token && pathname.includes('/login')) {
+  if (token && pathname.includes('/auth')) {
     window.location.href = '/'
     return null
   }
